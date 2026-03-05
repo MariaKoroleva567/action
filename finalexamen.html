@@ -392,7 +392,7 @@
                 };
             }
 
-            // --- Функция для запуска таймера на 120 секунд ---
+            // --- Функция для запуска таймера на 60 секунд ---
             function startTimer(seconds, callback) {
                 let timeLeft = seconds;
                 timerSeconds.textContent = timeLeft;
@@ -509,8 +509,8 @@
                 // Устанавливаем время последней попытки (джетлаг)
                 lastAttemptTime = Date.now();
 
-                // Запускаем таймер на 120 секунд
-                startTimer(120, () => {
+                // Запускаем таймер на 60 секунд
+                startTimer(60, () => {
                     // По окончании таймера показываем результат
                     displayResult(currentResult);
                     
@@ -537,3 +537,4 @@
 </body>
 
 </html>
+
